@@ -1,0 +1,222 @@
+[
+  {
+    "category": "Attack",
+    "question": "결정력: 박스 안 결정적인 기회에서 득점으로 연결하는 확률이 높은가요?",
+    "choices": [
+      { "text": "거의 놓치지 않는다", "score": 25 },
+      { "text": "성공률이 높다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "실수가 잦다", "score": 10 },
+      { "text": "결정력이 부족하다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Attack",
+    "question": "슈팅 파워: 먼 거리에서도 골키퍼가 막기 힘든 슛을 날릴 수 있나요?",
+    "choices": [
+      { "text": "매우 강력한 편이다", "score": 25 },
+      { "text": "강력한 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "약한 편이다", "score": 10 },
+      { "text": "매우 약하다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Attack",
+    "question": "위기 해결 능력: 어려운 각도나 압박 속에서도 슛을 날려 득점으로 연결할 수 있나요?",
+    "choices": [
+      { "text": "어떤 자세에서도 득점으로 연결할 수 있다", "score": 25 },
+      { "text": "어려운 상황에서도 유효슈팅으로 연결할 수 있다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "난이도가 높으면 득점이 어렵다", "score": 10 },
+      { "text": "거의 골로 연결하지 못한다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Attack",
+    "question": "침착함: 골키퍼와 1대1 상황이나 압박 속에서도 당황하지 않고 슛을 할 수 있나요?",
+    "choices": [
+      { "text": "매우 침착하다", "score": 25 },
+      { "text": "침착한 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "자주 당황한다", "score": 10 },
+      { "text": "극도로 긴장한다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Speed",
+    "question": "가속력: 정지 상태에서 최고 속도까지 도달하는 시간이 얼마나 빠른가요?",
+    "choices": [
+      { "text": "매우 빠르다", "score": 25 },
+      { "text": "빠르다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "느리다", "score": 10 },
+      { "text": "매우 느리다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Speed",
+    "question": "주력: 공이 없는 상태에서 긴 거리를 달릴 때 상대 수비보다 앞설 수 있나요?",
+    "choices": [
+      { "text": "매우 그렇다", "score": 25 },
+      { "text": "그렇다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "아니다", "score": 10 },
+      { "text": "전혀 아니다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Speed",
+    "question": "드리블 속도: 공을 발에 달고 뛸 때도 속도가 줄어들지 않고 유지되나요?",
+    "choices": [
+      { "text": "거의 줄지 않는다", "score": 25 },
+      { "text": "약간 줄어든다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "많이 줄어든다", "score": 10 },
+      { "text": "속도가 급격히 줄어든다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Speed",
+    "question": "반응 속도: 루즈볼이나 튕겨 나온 공을 향해 누구보다 빠르게 다가가나요?",
+    "choices": [
+      { "text": "항상 가장 빠르다", "score": 25 },
+      { "text": "빠른 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "한 박자 늦다", "score": 10 },
+      { "text": "반응이 매우 느리다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Creativity",
+    "question": "시야: 경기장 넓은 범위를 확인하고 비어있는 동료를 단번에 찾아내나요?",
+    "choices": [
+      { "text": "모든 공간이 다 보인다", "score": 25 },
+      { "text": "넓게 보는 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "가까운 동료만 보인다", "score": 10 },
+      { "text": "시야가 매우 좁다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Creativity",
+    "question": "정교함: 수비수 사이를 뚫는 킬패스나 정확한 크로스를 전달할 수 있나요?",
+    "choices": [
+      { "text": "매우 정교하다", "score": 25 },
+      { "text": "정확한 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "패스 미스가 잦다", "score": 10 },
+      { "text": "정교함이 매우 낮다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Creativity",
+    "question": "볼 컨트롤: 어려운 패스도 부드러운 터치로 자기 공으로 만드나요?",
+    "choices": [
+      { "text": "어떤 공이든 내 소유로 만든다", "score": 25 },
+      { "text": "잘 잡는 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "자주 튀어나간다", "score": 10 },
+      { "text": "볼 처리가 미숙하다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Creativity",
+    "question": "변수 창출: 상대가 전혀 예상하지 못한 기술이나 패스로 수비 벽을 허무나요?",
+    "choices": [
+      { "text": "창의적인 플레이로 경기의 흐름을 바꾼다", "score": 25 },
+      { "text": "가끔 시도하는 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "단조로운 편이다", "score": 10 },
+      { "text": "안전한 플레이만 한다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Defense",
+    "question": "수비 위치 선정: 위험 상황을 미리 예측하고 적절한 위치를 선점하여 상대 공격을 차단하나요?",
+    "choices": [
+      { "text": "항상 완벽한 위치를 선점한다", "score": 25 },
+      { "text": "위치 선정이 좋은 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "위치 선정이 자주 늦는다", "score": 10 },
+      { "text": "위치 선정이 매우 부족하다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Defense",
+    "question": "가로채기: 상대의 패스 경로를 미리 읽고 영리하게 공을 가로채나요?",
+    "choices": [
+      { "text": "길목을 완벽히 읽는다", "score": 25 },
+      { "text": "잘 가로채는 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "읽기가 힘들다", "score": 10 },
+      { "text": "항상 패스를 허용한다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Defense",
+    "question": "태클 능력: 파울 없이 정확한 타이밍에 공만 깔끔하게 뺏어내는 능력이 있나요?",
+    "choices": [
+      { "text": "태클이 매우 깔끔하다", "score": 25 },
+      { "text": "정확한 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "파울이 잦은 편이다", "score": 10 },
+      { "text": "태클이 매우 서툴다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Defense",
+    "question": "제공권/헤더: 공중볼 경합 시 높은 타점에서 헤더로 공을 처리하나요?",
+    "choices": [
+      { "text": "공중볼을 압도한다", "score": 25 },
+      { "text": "잘 따내는 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "경합에서 밀린다", "score": 10 },
+      { "text": "헤더를 거의 못 한다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Teamplay",
+    "question": "활동량: 경기 종료 직전까지 지치지 않고 공수 양면에서 뛸 수 있나요?",
+    "choices": [
+      { "text": "지치지 않는 심장이다", "score": 25 },
+      { "text": "활동량이 많다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "후반에 급격히 지친다", "score": 10 },
+      { "text": "금방 체력이 고갈된다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Teamplay",
+    "question": "헌신: 팀을 위해 희생적인 수비를 하거나 동료의 빈자리를 메워주나요?",
+    "choices": [
+      { "text": "매우 헌신적이다", "score": 25 },
+      { "text": "잘 도와주는 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "내 구역만 지킨다", "score": 10 },
+      { "text": "협력 수비를 안 한다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Teamplay",
+    "question": "몸싸움: 상대와의 물리적인 경합에서 밀리지 않고 공을 지켜내나요?",
+    "choices": [
+      { "text": "절대 밀리지 않는다", "score": 25 },
+      { "text": "버티는 힘이 좋다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "쉽게 밀리는 편이다", "score": 10 },
+      { "text": "경합 자체가 힘들다", "score": 5 }
+    ]
+  },
+  {
+    "category": "Teamplay",
+    "question": "연계 플레이: 원터치 패스나 움직임으로 공격 흐름을 자연스럽게 이어갈 수 있나요?",
+    "choices": [
+      { "text": "항상 흐름을 매끄럽게 연결한다", "score": 25 },
+      { "text": "연계 플레이가 좋은 편이다", "score": 20 },
+      { "text": "보통이다", "score": 15 },
+      { "text": "연계가 자주 끊긴다", "score": 10 },
+      { "text": "거의 연계에 참여하지 못한다", "score": 5 }
+    ]
+  }
+]

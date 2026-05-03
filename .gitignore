@@ -1,0 +1,21 @@
+# --- Python 기본 캐시 ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- 가상환경  ---
+venv/
+.venv/
+env/
+
+# --- Streamlit 및 보안 ---
+# 로그인 비밀번호 정보가 깃허브에 올라가는 것을 방지
+.streamlit/secrets.toml
+
+# --- macOS 환경 파일 ---
+# Mac에서 자동으로 생성되는 숨김 파일로, 협업 시 충돌을 방지
+.DS_Store
+
+# --- IDE (VS Code) 설정 ---
+# 개인 작업 공간 설정이 깃허브에 올라가는 것을 방지
+.vscode/
