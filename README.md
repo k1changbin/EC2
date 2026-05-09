@@ -1,6 +1,6 @@
-# streamlit-quiz-project 
+# EC2
+중간고사 대체과제 streamlit을 EC2 환경에서 실행
 
-repository 이름을 oss_mid_assignment 에서 streamlit-quiz-project로 변경했습니다. (4/21)
 ## 🔐 실행 방법 (로그인 및 보안 설정)
 
 본 프로젝트는 보안을 위해 st.secrets를 사용합니다. 로컬에서 실행 시 .streamlit/secrets.toml 파일을 생성하고 아래 내용을 추가해야 로그인이 가능합니다.
