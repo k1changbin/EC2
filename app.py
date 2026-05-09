@@ -86,7 +86,7 @@ if st.session_state.page == "main":
     _, center_col, _ = st.columns([1, 1, 1])
     with center_col:
         st.write("") # 위아래 여백
-        if st.button("분석하러 가기", use_container_width=True, type="primary", key="btn_start_analysis"):
+        if st.button("분석하러 가기", width="stretch", type="primary", key="btn_start_analysis"):
             print("'분석하러 가기' 버튼 클릭")
             st.session_state.page = "quiz" # 퀴즈 페이지로 상태 변경
             st.rerun()
@@ -142,7 +142,7 @@ elif st.session_state.page == "quiz":
             margin=dict(l=30, r=30, t=30, b=30),
             height=300
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
         
         # 각 항목별 개별 MAX_VAL 적용하여 프로그레스 바 표시
         st.write("### 능력치 상세")
@@ -185,7 +185,7 @@ elif st.session_state.page == "quiz":
     col1, col2 = st.columns(2)
     with col1:
         if current_q > 0:
-            if st.button("이전", use_container_width=True):
+            if st.button("이전", width="stretch"):
                 print("이전 클릭")
                 st.session_state.answers[current_q] = selected
                 st.session_state.current_q -= 1
@@ -194,14 +194,14 @@ elif st.session_state.page == "quiz":
     with col2:
         if current_q < total_q - 1:
             # 선택지가 None이 아닐 때만 다음으로 넘어가도록
-            if st.button("다음", use_container_width=True, type="primary", disabled=(selected is None)):
+            if st.button("다음", width="stretch", type="primary", disabled=(selected is None)):
                 print("다음 클릭")
                 st.session_state.answers[current_q] = selected
                 st.session_state.current_q += 1
                 st.rerun()
         else:
             # 결과 보기 버튼도 마찬가지
-            if st.button("결과 보기", use_container_width=True, type="primary", disabled=(selected is None)):
+            if st.button("결과 보기", width="stretch", type="primary", disabled=(selected is None)):
                 print("결과 보기 클릭")
                 st.session_state.answers[current_q] = selected
                 st.session_state.stats = temp_stats.copy()
@@ -261,7 +261,7 @@ elif st.session_state.page == "result":
             legend=dict(yanchor="top", y=1.2, xanchor="left", x=0),
             margin=dict(t=50, b=30, l=30, r=30)
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
 
     with top_col2:
         st.write("") 
@@ -321,8 +321,9 @@ elif st.session_state.page == "result":
             st.write(f"포지션: {player['position']}")
 
     st.divider()
-    print("다시 검사하기 버튼 클릭")
-    if st.button("다시 검사하기", use_container_width=True):
+    
+    if st.button("다시 검사하기", width="stretch"):
+        print("다시 검사하기 버튼 클릭")
         st.session_state.page = "main"
         st.session_state.current_q = 0
         st.session_state.answers = {}
