@@ -42,11 +42,13 @@ with login_col:
     # 로그인 상태에 따른 버튼 표시
     if not st.session_state.login_status:
         if st.button("로그인"):
+            print("로그인 버튼 클릭") 
             st.session_state.show_login_form = True
             st.rerun()
     else:
         st.success(f"{st.session_state.user_id}")
         if st.button("로그아웃"):
+            print("로그아웃 버튼 클릭")
             st.session_state.login_status = False
             st.session_state.user_id = "게스트"
             st.rerun()
@@ -60,11 +62,13 @@ if not st.session_state.login_status and st.session_state.show_login_form:
         input_pw = st.text_input("비밀번호", type="password")
         if st.button("완료"):
             if input_id in USER_DB and USER_DB[input_id] == input_pw:
+                print(f"로그인 성공 : {input_id} 접속")
                 st.session_state.login_status = True
                 st.session_state.user_id = input_id
                 st.session_state.show_login_form = False
                 st.rerun()
             else:
+                print(f"로그인 실패 시도 id : {input_id}")
                 st.error("정보가 일치하지 않습니다.")
         if st.button("닫기"):
             st.session_state.show_login_form = False
@@ -81,6 +85,7 @@ if st.session_state.page == "main":
     with center_col:
         st.write("") # 위아래 여백
         if st.button("분석하러 가기", use_container_width=True, type="primary", key="btn_start_analysis"):
+            print("'분석하러 가기' 버튼 클릭")
             st.session_state.page = "quiz" # 퀴즈 페이지로 상태 변경
             st.rerun()
         st.write("")
@@ -179,6 +184,7 @@ elif st.session_state.page == "quiz":
     with col1:
         if current_q > 0:
             if st.button("이전", use_container_width=True):
+                print("이전 클릭")
                 st.session_state.answers[current_q] = selected
                 st.session_state.current_q -= 1
                 st.rerun()
@@ -187,12 +193,14 @@ elif st.session_state.page == "quiz":
         if current_q < total_q - 1:
             # 선택지가 None이 아닐 때만 다음으로 넘어가도록
             if st.button("다음", use_container_width=True, type="primary", disabled=(selected is None)):
+                print("다음 클릭")
                 st.session_state.answers[current_q] = selected
                 st.session_state.current_q += 1
                 st.rerun()
         else:
             # 결과 보기 버튼도 마찬가지
             if st.button("결과 보기", use_container_width=True, type="primary", disabled=(selected is None)):
+                print("결과 보기 클릭")
                 st.session_state.answers[current_q] = selected
                 st.session_state.stats = temp_stats.copy()
                 st.session_state.page = "result"
@@ -200,6 +208,7 @@ elif st.session_state.page == "quiz":
             
     st.divider()
     if st.button("메인 화면으로 돌아가기"):
+        print("메인 화면으로 돌아가기 클릭")
         st.session_state.page = "main"
         st.session_state.current_q = 0
         st.session_state.answers = {}
@@ -310,7 +319,7 @@ elif st.session_state.page == "result":
             st.write(f"포지션: {player['position']}")
 
     st.divider()
-    
+    print("다시 검사하기 버튼 클릭")
     if st.button("다시 검사하기", use_container_width=True):
         st.session_state.page = "main"
         st.session_state.current_q = 0
