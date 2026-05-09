@@ -61,7 +61,7 @@ if not st.session_state.login_status and st.session_state.show_login_form:
         input_id = st.text_input("아이디")
         input_pw = st.text_input("비밀번호", type="password")
         if st.button("완료"):
-            print("완료 버튼 클릭")
+            print("완료 클릭")
             if input_id in USER_DB and USER_DB[input_id] == input_pw:
                 print(f"로그인 성공 : {input_id} 접속")
                 st.session_state.login_status = True
@@ -72,7 +72,7 @@ if not st.session_state.login_status and st.session_state.show_login_form:
                 print(f"로그인 실패 시도 id : {input_id}")
                 st.error("정보가 일치하지 않습니다.")
         if st.button("닫기"):
-            print("닫기 버튼 클릭")
+            print("닫기 클릭")
             st.session_state.show_login_form = False
             st.rerun()
 
@@ -87,7 +87,7 @@ if st.session_state.page == "main":
     with center_col:
         st.write("") # 위아래 여백
         if st.button("분석하러 가기", width="stretch", type="primary", key="btn_start_analysis"):
-            print("'분석하러 가기' 버튼 클릭")
+            print("분석하러 가기 클릭")
             st.session_state.page = "quiz" # 퀴즈 페이지로 상태 변경
             st.rerun()
         st.write("")
@@ -323,7 +323,7 @@ elif st.session_state.page == "result":
     st.divider()
     
     if st.button("다시 검사하기", width="stretch"):
-        print("다시 검사하기 버튼 클릭")
+        print("다시 검사하기 클릭")
         st.session_state.page = "main"
         st.session_state.current_q = 0
         st.session_state.answers = {}
